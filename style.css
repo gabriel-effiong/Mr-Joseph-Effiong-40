@@ -28,11 +28,28 @@ a {
   z-index: 10;
 }
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
   font-weight: 800;
   letter-spacing: 0.12em;
   font-size: 15px;
 }
-.brand span {
+.brand-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+.brand-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2em;
+}
+.brand-text span {
   color: #e30613;
 }
 .nav nav {
