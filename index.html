@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mr Joseph Effiong @ 40</title>
+    <meta
+      name="description"
+      content="A heartfelt 40th birthday celebration for Mr Joseph Effiong."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand-wrap">
+        <div class="logo">JE</div>
+        <div>
+          <p class="eyebrow">Celebrating</p>
+          <h1>Mr Joseph Effiong</h1>
+        </div>
+      </div>
+
+      <div class="nav">
+        <button class="menu" aria-label="Open navigation">☰</button>
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#wishes">Wishes</a>
+          <a href="#stories">Stories</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow accent">40 Years of Grace</p>
+          <h2>Turning 40 with love, wisdom, and joy.</h2>
+          <p class="lead">
+            Join us in honouring a remarkable man whose life continues to
+            inspire, uplift, and bless everyone around him.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#wishes">Send a wish</a>
+            <a class="button ghost" href="#gallery">View gallery</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="photo-frame">
+            <img
+              src="images/JUBILEE IMAGE_160.JPG.jpeg"
+              alt="Joseph Effiong portrait"
+            />
+          </div>
+          <div class="countdown-box">
+            <p class="countdown-label">Birthday Countdown</p>
+            <div class="countdown" aria-label="Countdown to birthday">
+              <div>
+                <span id="days">00</span>
+                <small>Days</small>
+              </div>
+              <div>
+                <span id="hours">00</span>
+                <small>Hours</small>
+              </div>
+              <div>
+                <span id="minutes">00</span>
+                <small>Minutes</small>
+              </div>
+              <div>
+                <span id="seconds">00</span>
+                <small>Seconds</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section intro">
+        <div class="section-heading">
+          <p class="eyebrow accent">About Him</p>
+          <h3>A life filled with purpose, compassion, and impact</h3>
+        </div>
+        <div class="about-grid">
+          <article>
+            <h4>Legacy</h4>
+            <p>
+              Joseph has spent the years building a legacy grounded in faith,
+              kindness, and selfless service. His life is a beautiful example of
+              strength, dignity, and unwavering love.
+            </p>
+          </article>
+          <article>
+            <h4>Character</h4>
+            <p>
+              He brings warmth, wisdom, and calm to those around him. His
+              generosity and integrity have shaped lives and left lasting marks
+              on every community he touches.
+            </p>
+          </article>
+          <article>
+            <h4>Celebration</h4>
+            <p>
+              At 40, this milestone is more than a birthday. It is a tribute to
+              a journey marked by grace, resilience, and unforgettable memories.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="gallery" class="section gallery-section">
+        <div class="section-heading">
+          <p class="eyebrow accent">Memories</p>
+          <h3>Moments worth celebrating</h3>
+        </div>
+
+        <div class="gallery-grid">
+          <img src="images/JUBILEE IMAGE_11.JPG.jpeg" alt="Birthday moment 1" />
+          <img src="images/JUBILEE IMAGE_12.JPG.jpeg" alt="Birthday moment 2" />
+          <img src="images/JUBILEE IMAGE_18.JPG.jpeg" alt="Birthday moment 3" />
+          <img src="images/JUBILEE IMAGE_19.JPG.jpeg" alt="Birthday moment 4" />
+          <img src="images/JUBILEE IMAGE_31.JPG.jpeg" alt="Birthday moment 5" />
+          <img src="images/JUBILEE IMAGE_67.JPG.jpeg" alt="Birthday moment 6" />
+        </div>
+      </section>
+
+      <section id="wishes" class="section form-section alt-panel">
+        <div class="section-heading">
+          <p class="eyebrow accent">Birthday Wishes</p>
+          <h3>Leave a note of love</h3>
+        </div>
+
+        <div class="forms-layout">
+          <form id="wishForm" class="guest-form">
+            <div class="field-row">
+              <label>
+                Name
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+              </label>
+              <label>
+                Relationship
+                <input
+                  type="text"
+                  name="relationship"
+                  placeholder="Friend, family, colleague"
+                  required
+                />
+              </label>
+            </div>
+            <label>
+              Your message
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Write your birthday wish..."
+                required
+              ></textarea>
+            </label>
+            <button type="submit" class="button primary">Send wish</button>
+          </form>
+
+          <div class="list-panel">
+            <h4>Messages of love</h4>
+            <div id="wishList" class="wish-list"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="stories" class="section form-section">
+        <div class="section-heading">
+          <p class="eyebrow accent">Memories</p>
+          <h3>Share a story and a blessing</h3>
+        </div>
+
+        <div class="forms-layout reverse">
+          <form id="storyForm" class="guest-form">
+            <div class="field-row">
+              <label>
+                Name
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+              </label>
+              <label>
+                Relationship
+                <input
+                  type="text"
+                  name="relationship"
+                  placeholder="Your relation to him"
+                  required
+                />
+              </label>
+            </div>
+            <label>
+              How we met
+              <textarea
+                name="meeting"
+                rows="3"
+                placeholder="Tell us how you met or how he impacted your life"
+                required
+              ></textarea>
+            </label>
+            <label>
+              Impact
+              <textarea
+                name="impact"
+                rows="3"
+                placeholder="How has he touched your life?"
+                required
+              ></textarea>
+            </label>
+            <label>
+              What I admire
+              <textarea
+                name="admire"
+                rows="3"
+                placeholder="What do you admire most about him?"
+              ></textarea>
+            </label>
+            <button type="submit" class="button primary">Share story</button>
+          </form>
+
+          <div class="list-panel">
+            <h4>Tribute stories</h4>
+            <div id="storyList" class="story-list"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Happy 40th Birthday, Joseph Effiong.</p>
+      <p>
+        May your next chapter be filled with joy, purpose, and endless
+        blessings.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
