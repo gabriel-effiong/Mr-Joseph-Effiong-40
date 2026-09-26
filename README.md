@@ -13,6 +13,7 @@ For a real launch, connect the forms to Supabase (recommended) and add an admin 
 This is a plain HTML/CSS/JS site and can be deployed directly to Vercel, Netlify or GitHub Pages.
 
 ### Vercel
+
 1. Upload/push this folder to GitHub.
 2. Import the repository into Vercel.
 3. Framework preset: Other.
