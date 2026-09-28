@@ -23,7 +23,9 @@
   </head>
   <body>
     <header class="nav">
-      <a class="brand" href="#home">JOSEPH <span>EFFIONG</span></a
+      <a class="brand nav-brand" href="#home" aria-label="Joseph Effiong home">
+        <img src="images/logo.jpeg" alt="" />
+        <span>JOSEPH <b>EFFIONG</b></span> </a
       ><button class="menu" aria-label="Open menu">☰</button>
       <nav>
         <a href="#home">Home</a><a href="#about">About Him</a
@@ -54,7 +56,10 @@
         </div>
       </section>
 
-      <section class="countdown-wrap">
+      <section
+        class="countdown-wrap"
+        aria-label="Countdown to 27 October 2026 at midnight West Africa Time"
+      >
         <div><span id="days">00</span><small>Days</small></div>
         <div><span id="hours">00</span><small>Hours</small></div>
         <div><span id="minutes">00</span><small>Minutes</small></div>
@@ -280,14 +285,38 @@
             family, career and special moments.
           </p>
         </div>
-        <div class="gallery">
-          <div class="photo"><span>01</span><b>Family</b></div>
-          <div class="photo"><span>02</span><b>Career</b></div>
-          <div class="photo"><span>03</span><b>Friends</b></div>
-          <div class="photo"><span>04</span><b>Community</b></div>
-          <div class="photo"><span>05</span><b>Special Moments</b></div>
-          <div class="photo"><span>06</span><b>Celebration</b></div>
+        <div class="memory-carousel">
+          <button
+            class="carousel-control"
+            type="button"
+            data-direction="previous"
+            aria-label="Show previous memories"
+          >
+            &larr;
+          </button>
+          <div
+            class="gallery"
+            id="memoryGallery"
+            aria-label="Birthday memories"
+            tabindex="0"
+          ></div>
+          <button
+            class="carousel-control"
+            type="button"
+            data-direction="next"
+            aria-label="Show next memories"
+          >
+            &rarr;
+          </button>
         </div>
+        <button
+          class="carousel-toggle"
+          id="memoryAutoplay"
+          type="button"
+          aria-pressed="false"
+        >
+          Pause slideshow
+        </button>
       </section>
 
       <section class="section wishes" id="wishes">
@@ -346,6 +375,34 @@
           Celebrating a journey. Honouring a legacy. Appreciating a life of
           impact.
         </p>
+        <a
+          href="https://www.facebook.com/share/1JdQ2j4LU3/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-link"
+          aria-label="Follow Mr Joseph on Facebook"
+        >
+          <span>Follow Mr Joseph Effiong</span>
+          <svg class="facebook-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M13.4 21v-8.2h2.8l.4-3.2h-3.2V7.5c0-.9.3-1.6 1.6-1.6h1.7V3.1c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5v2.1H6.8v3.2h2.9V21h3.7Z"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/joseph-effiong-66392a12a?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_ios"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-link"
+          aria-label="Connect with Mr Joseph Effiong on LinkedIn"
+        >
+          <span>Connect with Mr Joseph Effiong</span>
+          <svg class="linkedin-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"
+            />
+          </svg>
+        </a>
       </div>
       <div>
         <b>27 OCTOBER 2026</b>
